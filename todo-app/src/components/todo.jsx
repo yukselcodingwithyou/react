@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
-import Typography from '@material-ui/core/Typography';
+import OutlinedCard from './todoCard';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
 
 class Todo extends Component {
     render() {
-        return ( <Typography variant="h5" component="h2" color="primary">
-                            Hello World!
-                 </Typography>
+        const useStyles = makeStyles(() => ({
+            root: {
+              flexGrow: 1,
+            }
+          }));
+        return (
+                <div className={useStyles.root}>
+                     <Grid container spacing={3}>
+                        <OutlinedCard />
+                     </Grid>
+                </div>
                 );
     }
 }
