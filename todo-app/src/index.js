@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Todos from './components/todos';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Todos />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
