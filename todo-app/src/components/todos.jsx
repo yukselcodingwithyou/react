@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import OutlinedCard from './todoCard';
+import TodoCard from './todoCard';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-class Todo extends Component {
+class Todos extends Component {
     render() {
         const useStyles = makeStyles(() => ({
             root: {
@@ -13,11 +13,11 @@ class Todo extends Component {
         return (
                 <div className={useStyles.root}>
                      <Grid container spacing={3}>
-                        <OutlinedCard />
+                        <TodoCard />
                      </Grid>
                 </div>
                 );
     }
 }
 
-export default Todo;
+export default Todos;
