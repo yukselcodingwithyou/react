@@ -55,6 +55,7 @@ export default function TodoForm() {
                         <Grid item xs={3} sm={3}>
                         <Button  variant="contained"
                                  color="primary"
+                                 type="submit"
                                  className={classes.button}
                                  startIcon={<AddIcon />}>Add</Button>
                         </Grid>
